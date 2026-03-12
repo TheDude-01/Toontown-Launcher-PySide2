@@ -11,14 +11,14 @@ password = getpass.getpass("Password: ")
 os.environ["GAME_WHITELIST_URL"] = "http://download.sunrise.games/launcher/"
 os.environ["GAME_IN_GAME_NEWS_URL"] = "http://download.sunrise.games/toontown/en/gamenews/"
 os.environ["GAME_SERVER"] = "unite.sunrise.games:6667"
-os.environ["ACCOUNT_SERVER"] = "http://unite.sunrise.games:4500"
+os.environ["ACCOUNT_SERVER"] = "127.0.0.1/toontown/en/"
 os.environ["PANDA_DOWNLOAD_URL"] = "http://download.sunrise.games/launcher/"
 os.environ["DOWNLOAD_SERVER"] = "http://download.sunrise.games/launcher/"
 
 connection = hc.HTTPSConnection("sunrise.games", 443)
 headers = {
             "Content-type": "application/x-www-form-urlencoded",
-            "User-Agent": "PySide2 - Disney's Toontown Online Launcher"}
+            "User-Agent": "PySide2 - Duderino's Toontown Online Launcher"}
 params = urlencode({
             "username": username.encode("utf-8"),
             "password": password.encode("utf-8"),
